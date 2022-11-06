@@ -5,7 +5,8 @@ const displayResult = document.querySelector('#display-result')
 
 const results = {
     keep: 'Keep this artifact',
-    trash: 'Destroy this artifact'
+    trash: 'Destroy this artifact',
+    defaultPiece: 'Please select a piece',
 }
 
 btn.addEventListener('click', function(){
@@ -19,6 +20,10 @@ btn.addEventListener('click', function(){
 
 
 function determineWorth(piece, type) {
+
+    if (piece === 'default') {
+        return results.defaultPiece;
+    }
 
     if (type === 'crits') {
         return results.keep;

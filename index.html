@@ -11,32 +11,34 @@
 <body>
 
     <form action="#" id="get-data">
-        <label for="piece">Select Piece:</label>
-        <select name="piece" id="piece">
-            <option value="default">---Choose---</option>
-            <option value="flower">Flower</option>
-            <option value="feather">Feather</option>
-            <option value="sands">Time-piece</option>
-            <option value="goblet">Goblet</option>
-            <option value="circlet">Circlet</option>
-        </select>
+        <div id="piece-container" class="container">
+            <label for="piece">Select Piece*:</label>
+            <select name="piece" id="piece">
+                <option value="default">---Choose---</option>
+                <option value="flower">Flower</option>
+                <option value="feather">Feather</option>
+                <option value="sands">Time-piece</option>
+                <option value="goblet">Goblet</option>
+                <option value="circlet">Circlet</option>
+            </select>
+        </div>
 
-        <label for="type">State type:</label>
-        <select name="type" id="type">
-            <option value="0">No Flat stats</option>
-            <option value="1">1 Flat stat</option>
-            <option value="2">2 Flat stat</option>
-            <option value="3">3 Flat stat</option>
-            <option value="4">4 Flat stat</option>
-            <option value="crits">Double-Crits</option>
-        </select>
+        <div id="stat-container" class="container">
+            <label for="type">Stat type:</label>
+            <select name="type" id="type">
+                <option value="0">No Flat stats</option>
+                <option value="1">1 Flat stat</option>
+                <option value="2">2 Flat stat</option>
+                <option value="3">3 Flat stat</option>
+                <option value="4">4 Flat stat</option>
+                <option value="crits">Double-Crits</option>
+            </select>
+        </div>
 
         <button type="button">Show what to do</button>
     </form>
 
     <h1 id="display-result"></h1>
 
-
-    
 </body>
 </html>
